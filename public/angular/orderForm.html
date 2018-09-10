@@ -1,0 +1,58 @@
+<div id="Left" class="split left" style="background-image:url('../images/BackGround.jpg');background-size:100% 100%;background-repeat:no-repeat;">
+    <div class="centered">
+        <form name="orderForm">
+            <div class="container">
+                <h1>Place Order</h1>
+
+                <fieldset>
+                    <legend><b>Day</b></legend>
+
+                    <div>
+                        <input type="radio" id="mon" name="day" value="Monday" checked ng-model="day"/>
+                        <label for="mon">Mon</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="wed" name="day" value="Wednesday" ng-model="day"/>
+                        <label for="wed">Wed</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="fri" name="day" value="Friday" ng-model="day"/>
+                        <label for="fri">Fri</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Time</b></legend>
+
+                    <div>
+                        <input type="radio" id="time1" name="time" value="08:00 - 10:00" checked ng-model="time"/>
+                        <label for="time1">08:00 - 10:00</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="time2" name="time" value="10:00 - 12:00" ng-model="time"/>
+                        <label for="time2">10:00 - 12:00</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="time3" name="time" value="12:00 - 14:00" ng-model="time"/>
+                        <label for="time3">12:00 - 14:00</label>
+                    </div>
+
+                </fieldset>
+
+                <a href="#/userLogged"><button type="submit" class="registerbtn" ng-click="order()">Order</button></a>
+            </div>
+        </form>  
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered">
+        <a href="#/orderForm"><button id="placeOrder"><h1>Place Order</h1></button></a>
+        <a href="#/updateProfile"><button id="updateProfile"><h1>Update Profile</h1></button></a>
+        <a href="#/signOut"><button id="signOut"><h1>Sign Out</h1></button></a>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div id="Left" class="split left" style="background-image:url('../images/BackGround.jpg');background-size:100% 100%;background-repeat:no-repeat;">
+
+    <div class="centered">
+        <form name="registerForm" ng-submit="register()">
+            <div class="container">
+                <h1>Register</h1>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" required type="email" name="email" ng-model="email">
+
+                <div ng-messages="register.email.$error" role="alert">
+                    <div class ="alert alert-danger" ng-message="required">Please enter a value for this field.</div>
+                </div>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" ng-model="password">
+
+                <div ng-messages="register.password.$error" role="alert">
+                    <div class ="alert alert-danger" ng-message="required">Please enter a value for this field.</div>
+                    <div class ="alert alert-danger" ng-message="minlength">This field needs to be at least 6 characters long.</div>
+                </div>
+
+                <label for="conPass"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="conPass" required>
+                <hr>
+
+                <a href="#/registerForm"><button type="submit" class="registerbtn" ng-click="register()">Register</button></a>
+            </div>
+        </form>
+    </div>
+
+    <div id="Right" class="split right">
+
+        <div class="centered">
+            <a href="#/logInForm"><button id="logInForm"><h1>Login</h1></button></a>
+            <a href="#/registerForm"><button id="registerForm"><h1>Register</h1></button></a>
+        </div>
+
+    </div>
+
+</div>

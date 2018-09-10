@@ -1,0 +1,29 @@
+<div id="Left" class="split left" style="background-image:url('../images/BackGround.jpg');background-size:100% 100%;background-repeat:no-repeat;">
+    <div class="centered">
+        <form name="updateProfile">
+            <div class="container">
+                <h1>Update Profile</h1>
+                <input type="text" placeholder="First Name" name="firstname" required ng-model="firstname">
+                <input type="text" placeholder="Last Name" name="lastname" ng-model="lastname">
+                <input type="text" placeholder="Phone" name="phone" required ng-model="phone">
+                <input type="text" placeholder="Email" name="email" required ng-model="email">
+                <input type="password" placeholder="Password" name="password" required ng-model="password">
+                <input type="password" placeholder="Repeat Password" name="confirmPassword" required>
+                <input type="text" placeholder="Number" name="number" required ng-model="number">
+                <input type="text" placeholder="Street" name="street" required ng-model="street">
+                <input type="text" placeholder="City" name="city" required ng-model="city">
+                <input type="text" placeholder="State" name="state" ng-model="state">
+                <input type="text" placeholder="Zip Code" name="zip" ng-model="zip">
+                <a href="#/userLogged"><button type="submit" class="registerbtn" ng-click="update()">Update Profile</button></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered">
+        <a href="#/orderForm"><button id="placeOrder"><h1>Place Order</h1></button></a>
+        <a href="#/updateProfile"><button id="updateProfile"><h1>Update Profile</h1></button></a>
+        <a href="#/signOut"><button id="signOut"><h1>Sign Out</h1></button></a>
+    </div>
+</div>
