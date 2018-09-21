@@ -1,0 +1,44 @@
+        <div id="Left" class="split left" >
+
+            <div class="centered">
+                <form id="logInForm" name="logInForm">
+                    <div class="newcontainer">
+                        <h1>LogIn</h1>
+                        
+                        <hr>
+                        
+                        <label for="email"><b>email</b></label>
+                        <input type="email" placeholder="Enter email" name="email" ng-model="email" required>
+                        
+                        <div ng-messages="logInForm.email.$error"  ng-if="logInForm.email.$touched" role="alert">
+                            <div class ="alert alert-danger" ng-message="required">Please enter a value for this field.</div>
+                            <div class ="alert alert-danger" ng-message="email">Please enter a valid email.</div>
+                      
+                        </div>
+                         
+                        <br>
+
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" ng-model="password" required minlength="6">
+                        
+                        <div ng-messages="logInForm.password.$error"  ng-if="logInForm.password.$touched"role="alert">
+                            <div class ="alert alert-danger" ng-message="required">Please enter a value for this field.</div>
+                            <div class ="alert alert-danger" ng-message="minlength">This field needs to be at least 6 characters long.</div>
+                        </div>
+
+                        <a href="#"><button id="LogInButton" ng-click="logIn()" type="submit">Login</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+            <div id="Right" class="split right">
+
+                <div class="centered">
+                    <a href="#/logInForm"><button class="btn login" id="logInForm"><h2>Login</h2></button></a>
+                    <a href="#/registerForm"><button class="btn login" id="registerForm"><h2>Register</h2></button></a>
+                </div>
+
+            </div>
+
+      
