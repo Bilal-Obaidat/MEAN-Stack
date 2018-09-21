@@ -2,7 +2,7 @@
   "name": "mean-stack",
   "version": "1.0.0",
   "scripts": {
-    "start": "app.js"
+    "start": " node app.js"
   },
    "engines": {
     "node": "8.1.2",
