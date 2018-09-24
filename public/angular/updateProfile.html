@@ -2,9 +2,8 @@
     <div class="centered">
         <form name="updateProfile">
             <div class="newcontainer">
-
                 <h1>Update Profile</h1>
-                 <div ng-if="showSuccess" class="alert alert-success">Profile Updated!</div>
+                <div ng-if="showSuccess" class="alert alert-success">Profile Updated!</div>
                 <input type="text" placeholder="First Name" name="firstname" required ng-model="user.firstname">
                 <input type="text" placeholder="Last Name" name="lastname" ng-model="user.lastname">
                 <input type="text" placeholder="Phone" name="phone" required ng-model="user.phone">
@@ -17,7 +16,6 @@
                 <input type="text" placeholder="Zip Code" name="zip" ng-model="user.address.zip">
                 <button type="submit" class="registerbtn" ng-click="update()">Update Profile</button>
             </div>
-           
         </form>
     </div>
 </div>
