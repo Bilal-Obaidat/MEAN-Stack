@@ -61,15 +61,6 @@ button:hover {
     margin: 24px 0 12px 0;
 }
 
-/* Avatar image */
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-div {
-  
-}
-
 /* The "Forgot password" text */
 span.psw {
     float: right;
@@ -90,7 +81,6 @@ span.psw {
 /*LogIn form styling*/
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
-
 
 #LogInButton {
     background-color: #4CAF50;
