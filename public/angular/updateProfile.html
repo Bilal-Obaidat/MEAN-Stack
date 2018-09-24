@@ -1,0 +1,32 @@
+<div id="Left" class="split left">
+    <div class="centered">
+        <form name="updateProfile">
+            <div class="newcontainer">
+
+                <h1>Update Profile</h1>
+                 <div ng-if="showSuccess" class="alert alert-success">Profile Updated!</div>
+                <input type="text" placeholder="First Name" name="firstname" required ng-model="user.firstname">
+                <input type="text" placeholder="Last Name" name="lastname" ng-model="user.lastname">
+                <input type="text" placeholder="Phone" name="phone" required ng-model="user.phone">
+                <input type="text" placeholder="Email" name="email" required ng-model="user.email">
+                <input type="password" placeholder="Password" name="password" required ng-model="user.password">
+                <input type="text" placeholder="Number" name="number" required ng-model="user.address.number">
+                <input type="text" placeholder="Street" name="street" required ng-model="user.address.street">
+                <input type="text" placeholder="City" name="city" required ng-model="user.address.city">
+                <input type="text" placeholder="State" name="state" ng-model="user.address.state">
+                <input type="text" placeholder="Zip Code" name="zip" ng-model="user.address.zip">
+                <!-- <a href="#/userLogged"> --><button type="submit" class="registerbtn" ng-click="update()">Update Profile</button><!-- </a> -->
+            </div>
+           
+        </form>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered">
+        <a href="#/orderForm"><button class="btn login" id="placeOrder"><h2>Place Order</h2></button></a>
+        <a href="#/updateProfile"><button class="btn login" id="updateProfile"><h2>Update Profile</h2></button></a>
+         <a ng-href="#/deleteAccount"><button class="btn login" id="delete"><h2>Delete Profile</h2></button></a>
+        <a href="#/signOut"><button class="btn login" id="signOut"><h2>Sign Out</h2></button></a>
+    </div>
+</div>
