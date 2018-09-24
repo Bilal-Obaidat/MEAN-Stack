@@ -102,7 +102,6 @@ App.controller('registerForm', ['$scope', '$http', '$location', function($scope,
     $scope.password = '';
     $scope.repassword='';
     $scope.showError=false;
-    //console.log($scope.registerForm.password)
     $scope.register = function () {
         console.log($scope.registerForm.$valid);
         if($scope.registerForm.$valid){
